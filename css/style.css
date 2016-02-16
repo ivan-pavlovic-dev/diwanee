@@ -590,6 +590,9 @@ article{margin: 0 auto}
         width: 70vw;
         font-size: 16px;
     }
+	.digital-media>article>p{
+		font-size:19px;
+	}
 
     /*CONTACT*/
 
