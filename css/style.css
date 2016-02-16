@@ -1,0 +1,638 @@
+body{
+    margin:0 auto;
+    padding: 0;
+    font-family:'Source Sans Pro', sans-serif;';
+}
+a{color:inherit;
+    text-decoration: none;
+}
+body section:nth-child(even){
+    background-color: #fbfbfb;
+}
+
+/*HEADER*/
+
+.header{
+    background-image: url("../content/img/diwanee-cover.png");
+    min-height: 100vh;
+    background-size: cover;
+    background-position:center bottom;
+    position: relative;
+}
+.logo{
+    /*margin-top:40px ;*/
+    width: 135px;
+    height: 34px;
+    background-image: url("../content/img/diwanee-logo.png");
+    background-repeat: no-repeat;
+    text-indent: 100%!important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main-title {
+    width: 80%;
+    height: 70%;
+    overflow: visible;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+.main-title h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.main-title p{
+    margin:0 auto;
+    max-width: 700px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.site-nav{
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 4px;
+    padding-top:40px ;
+    width:70vw;
+    margin-left:auto;
+    margin-right:auto;
+}
+.mobile-nav{
+    width: 100vw;
+    display: none;
+    margin: 0 auto;
+}
+.mobile-nav-list{
+    display: none;
+    z-index: 100;
+}
+.mobile-nav span{
+    right: 0;
+    margin-top:25px ;
+    margin-right: 20px;
+    width: 27px;
+    height:2px;
+    background: #333;
+}
+.mobile-nav-list{
+    clear: both;
+    width: 100%;
+    list-style: none;
+}
+.mobile-nav-list li{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.mobile-nav-list li:last-child{
+    display: flex;
+    justify-content:space-between;
+    padding-left: 50px;
+    padding-right: 50px
+}
+.mobile-nav-list li:last-child a{
+    display: inline-block;
+    margin-left: 10px;
+}
+.mobile-nav-list li:last-child text{
+    color:#929292;
+}
+.site-nav h1{
+    float:left;
+}
+.site-nav ul{
+    margin-top:30px;
+    /*margin-top: 5px;*/
+    float: right;
+}
+.site-nav ul li{
+    width: 150px;
+    display: inline-block;
+}
+.site-nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:inherit;
+}
+
+
+/*ABOUT US*/
+
+.about-us>article{
+    text-align: center;
+
+}
+.about-us h3{
+    text-transform: uppercase;
+    padding-top: 20px;
+    height: auto;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+    letter-spacing: 4px;
+    line-height: 30px;
+}
+
+.about-us article:nth-child(2){
+    background-color:#ededed ;
+}
+.about-us img{
+    padding-top: 50px;
+    display: block;
+    margin:0 auto;
+}
+.about-us p{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    color:#8a8889;
+}
+
+/*DIGITAL MEDIA*/
+
+.digital-media>article{
+    text-align: justify;
+    max-width: 800px;
+}
+.digital-media>article>p{
+    font-weight: 400;
+    font-size: 24px;
+    color: #888;
+    line-height: 34px;
+}
+
+/*JOBS*/
+
+.jobs>article{
+    width: 50vw;
+    text-align: center;
+}
+.jobs .we-are-looking{
+    font-size: 30px;
+}
+.jobs ul{
+    margin: 0;
+    padding: 0;
+}
+
+.jobs ul li{
+    width: 100vw;
+}
+.jobs ul li:last-child{
+    text-align: center;
+    background-color: transparent!important;
+}
+.jobs ul li:last-child button{
+    background-color: transparent!important;
+    color:#333333!important;
+}
+.jobs ul li:nth-child(even), .jobs ul li:nth-child(even) h4{
+    background-color: #333333;
+    color:white;
+}
+.jobs ul li:nth-child(even) button{
+    background-color: #333333;
+    color:white;
+}
+
+.jobs ul li{
+    width: 100%;
+    padding-top: 65px;
+    padding-bottom: 85px;
+}
+.jobs ul li article{
+    width: 70%;
+}
+.jobs ul li h4{
+    padding-bottom: 50px;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333333;
+    letter-spacing: 1em;
+    line-height: 36px;
+
+}
+.jobs ul li article span text{
+    padding-bottom: 50px;
+    float: left;
+    font-weight: 400;
+    font-size: 24px;
+    color: #888;
+    line-height: 34px;
+}
+.job-element div{
+    margin-top: 50px;
+}
+.job-element:nth-child(even) .tag{
+    color:white;
+}
+.tag{
+    margin: 0;
+    margin-right: 15px;
+    border: 1px solid #e4e4e4;
+    padding: 5px 20px;
+    font-size: 16px;
+    color: #C41230;
+    letter-spacing: 2px;
+}
+.job-button{
+    float: right;
+}
+
+/*FOLLOW US*/
+
+.follow-us>article{
+    text-align: center;
+    width: 90vw;
+}
+.follow-us img{
+    margin: 10px
+}
+
+.footer{
+    background-color: #2d2d2d;
+}
+
+/*CONTACT*/
+
+.contact{
+    background-color: #2d2d2d;
+}
+.contact p{
+    font-weight: 400;
+    font-size: 18px;
+    color: #9B9B9B;
+    line-height: 28px;
+
+}
+.copyright{
+    font-weight: 400;
+    font-size: 12px;
+    color: #5B5B5B;
+    letter-spacing: 2px;
+    display:flex;
+    justify-content:space-between;
+    min-height: 20px;
+    background-color: #242424;
+    padding:20px 100px;
+}
+.copyright span{
+    margin: 0 auto;
+}
+.copyright a{
+    margin: 0 20px;
+}
+.location{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+.location:before{
+    background-image: url('../content/img/place-pin-ico.png');
+    background-repeat: no-repeat;
+    background-size: 15px 20px;
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    content:"";
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.linkedIn:before{
+    background-image: url('../content/img/linkedin-icon-dark.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content:"";
+}
+.twt:before{
+    background-image: url('../content/img/twitter-icon-dark.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: top left;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content:"";
+}
+.fb:before{
+    background-image: url('../content/img/fb-dark.png');
+    background-repeat: no-repeat;
+    background-size: 15px 15px;
+    background-position: top left;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    content:"";
+}
+
+/*IN COMMON*/
+
+.dash{
+    height: 10px;
+}
+.dash:after{
+    height: auto;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: -40px;
+    content: "";
+    position: absolute;
+    width: 65px;
+    border-bottom: 3px solid #C41230;
+}
+
+.about-us, .contact{
+    display: flex;
+    justify-content:center
+}
+
+h3 .dash:after{
+    padding-top: 20px;
+    margin: 0 auto;
+    margin-left: -23px;
+    width: 45px;
+    border-bottom: 3px solid #cbcbcb;
+}
+
+.jobs>p, .digital-media>p, .follow-us>p{
+    width: 50vw;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 80px;
+    letter-spacing: 5px;
+}
+.jobs h1, .digital-media h1{
+    clear: both;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    color: #333;
+    letter-spacing: 3px;
+    line-height: 75px;
+    padding-bottom: 50px;
+}
+
+button{
+    border: 1px solid #979797;
+    font-size:  18px;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 23px;
+    background-color: transparent;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+    /*border: 1px solid #e4e4e4;*/
+    /*font-weight: 600;*/
+}
+
+article{margin: 0 auto}
+.jobs, .digital-media, .follow-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+@media (max-width: 320px){
+    body{
+        display: block;
+    }
+
+    /*HEADER*/
+
+    .site-nav{
+        display: none;}
+    .mobile-nav{
+        display: block;
+        position: relative;
+    }
+    .mobile-nav h1,span{
+         margin-left: 15px;
+         margin-top: 10px;
+     }
+    .mobile-nav.open span:before{
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        transform-origin:top left;
+    }
+    .mobile-nav.open span:after{
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        transform-origin:bottom left;
+    }
+    .mobile-nav h1{float: left}
+    .mobile-nav span{
+        float: right;
+        display: block;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay:  0s;}
+
+    .mobile-nav.open span{
+        background-color: transparent;
+    }
+    .mobile-nav-list{
+        position: absolute;
+        top: 60px;
+        padding-top: 10px;
+        list-style: none;
+        display: none;
+
+    }
+    .mobile-nav-list li{
+        border-bottom: 1px solid white;
+        margin:0;
+        background-color:#333;
+        padding: 10px 0;
+    }
+    .mobile-nav-list li a{
+        display: block;
+        text-decoration: none;
+        color:white;
+    }
+    .mobile-nav span:before, .mobile-nav span:after{
+        content: "";
+        display: block;
+        height: 2px;
+        width: 100%;
+        position: relative;
+        background-color: #333;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+    }
+    .mobile-nav span:before{
+        top: 10px;
+        transition-property: top, transform;
+        transform-origin:top left;
+    }
+    .mobile-nav span:after{
+        bottom: 12px;
+        transition-property: bottom, transform;
+        transform-origin:bottom left;
+    }
+    .mobile-nav-list.isOpen{
+        opacity: 0.95;
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    .mobile-nav-list li{visibility: hidden;}
+    .mobile-nav-list.isOpen li {
+        visibility: visible;
+        -webkit-transition: padding .05s linear;
+        -moz-transition: padding .05s linear;
+        -ms-transition: padding .05s linear;
+        -o-transition: padding .05s linear;
+        transition: visibility .05s linear;
+    }
+    .header{
+        height: 100vw;
+        display: block;
+    }
+
+    .main-title h1{
+        margin: 0 auto;
+        padding-top: 100px;
+        width: 50vw;
+        font-size: 30px;
+
+    }
+    .main-title p{
+        margin: 0 auto;
+        margin-top: 70px;
+        height:50px;
+        overflow: hidden;
+        width: 70vw;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    /*ABOUT-US*/
+
+    .about-us p{
+        font-size: 9px;
+    }
+    .about-us{display: block}
+    .about-us h3{
+        font-size: 12px;
+    }
+
+    /*JOBS*/
+
+    .jobs h1, .digital-media h1{
+        font-size: 40px;
+        padding-bottom: 50px;
+    }
+    .jobs>p, .digital-media>p, .follow-us>p{
+        width: 80vw;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .jobs .we-are-looking{
+        font-size: 19px;
+    }
+    .jobs article{
+        font-size: 25px;
+        width: 80vw;
+    }
+    .jobs ul li{padding: 20px 0;}
+    .jobs ul li h4{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    .jobs ul li  text{
+        display: block;
+        float: left;
+        width: 220px;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 16px;
+    }
+    .tag{
+        font-size: 9px;
+        border: none;
+        padding: 0px;
+    }
+    .job-element div{
+        margin-top: 10px;
+        width: 70vw;
+    }
+    .tag:after{
+        display: none;
+    }
+    .job-button{
+        display: none;
+    }
+    /*DIGITAL MEDIA*/
+    .digital-media>article{
+        width: 70vw;
+        font-size: 16px;
+    }
+
+    /*CONTACT*/
+
+
+    .contact{
+        flex-direction:column-reverse;
+        padding-bottom: 20px;
+    }
+    .contact article{
+        width: 90vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contact p, .contact h6{
+        font-size: 9px;
+    }
+    .location:before{
+        background-size: 5px 10px;
+        width: 5px;
+        height: 10px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .contact p{margin: 0; fontsize:9px;}
+    .contact div{margin: 0; padding: 0}
+    .copyright{
+        padding: 0;
+        flex-direction:column-reverse;
+        font-size: 6px;
+        text-align: center;
+    }
+    .copyright div:first-child{
+        padding:20px 0px ;
+        background-color: #2d2d2d;
+    }
+    .copyright div:last-child{
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    button{
+        font-size: 11px;
+    }
+}
