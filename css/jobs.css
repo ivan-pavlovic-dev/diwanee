@@ -1,0 +1,143 @@
+.jobs>p,.jobs>h1{
+    width: 90vw;
+    margin: 0 auto;
+    text-align: center;
+}
+.jobs>h1{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.job-list, .job-list li{
+    margin:0;
+    padding: 0;
+}
+.job-list li{
+    margin: 0 auto;
+    display: flex;
+}
+.job-list li:nth-child(even){
+    background-color: #333333;
+}
+.job-list li:nth-child(even) h4{
+    color: white;
+}
+
+.job-list > li > article{
+    position: relative;
+    width: 50vw;
+    margin: 0 auto;
+}
+.job-list > li:last-child button{
+    position: relative;
+    margin:0 auto;
+}
+.job-list> li > article > button{
+    position:absolute;
+    top:50%;
+    right:0;
+    transform:translateY(-50%);
+}
+.job-list h4{
+    font-weight: 600;
+    font-size: 28px;
+    color: #333333;
+    letter-spacing: 1.75pt;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+.jobs h3{
+    width: 50vw;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    font-size: 36px;
+    color: #333333;
+    line-height: 50px;
+    margin-top:100px;
+    margin-bottom:100px;
+}
+.job-list p{
+    width: 70%;
+    font-weight: 300;
+    font-size: 24px;
+    color: #888;
+    line-height: 34px;
+}
+.tags{padding: 30px 0;}
+.tags span{
+    margin: 0;
+    margin-right: 15px;
+    border: 1px solid #e4e4e4;
+    padding: 5px 20px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color:#C41230;
+}
+.job-list li:nth-child(even) .tags span{
+    color:white;
+}
+.job-list li:nth-child(even) button{
+    color: white;
+}
+.load-more{
+    padding: 50px 50px 200px 50px!important;
+    background-color: transparent!important;
+}
+.load-more button{
+    color: #333333!important;
+}
+
+@media screen and (max-width: 320px) {
+    .job-list> li > article{
+        width: 90vw;
+    }
+.job-list> li > article > button{
+    display: none;
+}
+.jobs>p{padding-top: 50px!important;}
+    .tags{display: inline-block;}
+    .tags span{
+        margin:0;
+        padding: 0;
+        padding-right: 10px;
+        border:none;
+        font-size: 9px;
+        color: #C41230!important;
+        font-weight: 600;
+    }
+    .jobs h4{
+        font-size: 17px;
+    }
+    .job-list p{
+        font-size: 16px;
+    }
+    .jobs h3{
+        font-size: 18px;
+        width: 80vw;
+        margin: 0 auto;
+        margin-top: 30px;
+        line-height: normal;
+        padding-bottom: 50px;
+    }
+    .job-list p{
+        width: 100%;
+    }
+    .job-list article p{
+        height: 25px;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .job-list h4{margin-top: 20px; margin-bottom: 0; color: #333333!important; text-transform: uppercase}
+    .job-list p:nth-child(2){margin-top: 5px;}
+	.job-list li {padding-bottom:20px}
+    .job-list li:nth-child(odd){
+        background-color: #f8f7f5;
+    }
+    .job-list li:nth-child(even){
+        background-color: transparent;
+    }
+    .job-list p:nth-child(4){height: 0}
+    .tags{padding: 0;}
+}

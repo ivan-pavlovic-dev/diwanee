@@ -1,0 +1,12 @@
+.follow-us{
+    text-align: center;
+    padding-bottom: 100px;
+}
+.follow-us img{
+    margin: 10px;
+}
+@media (max-width: 320px) {
+    .follow-us img{
+        margin: 5px;
+    }
+}

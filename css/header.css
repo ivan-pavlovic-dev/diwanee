@@ -1,0 +1,182 @@
+.head{
+    height:100vh;
+    background-image: url('../content/img/diwanee-cover.png');
+    background-size: 100% 100%;
+    background-repeat:no-repeat ;
+}
+.navigation {
+    position: relative;
+    display:flex;
+    justify-content:space-between;
+    width:80vw;
+    margin:0 auto;
+    padding-top: 50px;
+}
+.nav-button{
+    display: none;
+    right: 0;
+    margin-right: 0px;
+    width: 40px;
+    height:2px;
+    background: #333;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.nav-button:before, .nav-button:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    background-color: #333;
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+.nav-button:before{
+    top: 10px;
+    transition-property: top, transform;
+    transform-origin:top left;
+}
+.nav-button:after{
+    bottom: 12px;
+    transition-property: bottom, transform;
+    transform-origin:bottom left;
+}
+
+.nav-button.open:before{
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transform-origin:top left;
+}
+.nav-button.open:after{
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transform-origin:bottom left;
+}
+.nav-button.open{
+    background-color: transparent;
+}
+.logo{
+    float:left;
+    background-image: url('../content/img/diwanee-logo.png');
+    /*width: 135px;*/
+    height: 40px;
+    background-repeat: no-repeat;
+    text-indent: 100%!important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+nav{
+    position: absolute;
+	float:right;
+    bottom: 0;
+    right: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #333333;
+    letter-spacing: 4px;
+    top: 50%;
+    transform: translateY(40%);
+}
+nav ul{
+    margin:0
+}
+nav ul li{
+    width: 150px;
+	display:inline-block;
+}
+nav ul li:last-child{
+	display:none;
+}
+.main-title{
+    width: 90vw;
+    text-align:center;
+    position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.main-title h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 120px;
+    color: #333;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.main-title h2{
+    margin: 0 auto;
+    width: 40vw;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+
+
+
+@media screen and (max-width: 320px) {
+    .head{
+        background-size: cover;
+        background-position: center;
+    }
+    nav{
+        display: none;
+    }
+    .nav-button{
+        display: block;
+    }
+	.main-title h1{
+        font-size: 30px;
+    }
+    .main-title h2{
+        width: 80vw;
+        font-size: 18px;
+        height: 36px;
+        overflow: hidden;
+        text-transform: uppercase;
+    }
+    nav{
+        clear:both;
+        position: absolute;
+        top:50px;
+        display:block;
+    }
+    .navigation ul{
+        display: none;
+    }
+    nav ul li:last-child{
+        display:block;
+    }
+    .navigation{
+        width: 100vw;
+    }
+    .navigation{
+        padding-top: 10px;
+        z-index: 1;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .navigation li{
+        opacity: 0.95;
+        background-color: #363636;
+        color:#888;
+        width: 100vw;
+        text-align: center;
+        padding: 15px;
+        border-bottom:solid #888;
+        border-width: 1pt;
+    }
+    .nav-button{
+        margin-right: 20px;
+    }
+    p {
+        /*display: block;*/
+    }
+}
